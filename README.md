@@ -21,12 +21,12 @@ This app with consist of two(currently) views, which can be navigated through th
 
 ### View 1
 
-
+![](https://raw.githubusercontent.com/alvink92/nba-pastime/master/docs/images/wireframes/overview.png)
 
 
 ### View 2
 
-
+![](https://raw.githubusercontent.com/alvink92/nba-pastime/master/docs/images/wireframes/stat_breakdown.png)
 
 
 ### Architecture and Technology
