@@ -1,8 +1,7 @@
 {
-  "name": "nba-pastime",
+  "name": "nba-snapshot",
   "version": "1.0.0",
-  "description":
-    "This README would normally document whatever steps are necessary to get the application up and running.",
+  "description": "This README would normally document whatever steps are necessary to get the application up and running.",
   "main": "webpack.config.js",
   "directories": {
     "doc": "docs",
@@ -14,16 +13,21 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/alvink92/nba-pastime.git"
+    "url": "git+https://github.com/alvink92/nba-snapshot.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/alvink92/nba-pastime/issues"
+    "url": "https://github.com/alvink92/nba-snapshot/issues"
   },
-  "homepage": "https://github.com/alvink92/nba-pastime#readme",
-  "dependencies": {},
+  "homepage": "https://github.com/alvink92/nba-snapshot#readme",
+  "dependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2015": "^6.24.1",
+    "webpack": "^3.6.0"
+  },
   "engines": {
     "node": "6.10.1",
     "npm": "3.10.10"
