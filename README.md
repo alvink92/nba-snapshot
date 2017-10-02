@@ -1,9 +1,9 @@
 # NBA Snapshot
 
 ## Overview
-NBA Snapshot is a statistical dashboard that shows a snapshot of a state of an NBA match. Users can view team and player statistics as well as explore breakdowns of how well the game is going.
+NBA Snapshot is a statistical dashboard that shows a snapshot of a state of an NBA match. Users can view team and player statistics as well as explore breakdowns of how well the game is going at the time.
 
-<sub>Although NBA Snapshot only displays a single snapshot as of now, it's future may include a backend implementation to feed users live updates to game scores and statistics as live games are going on</sub>
+<sub>Although NBA Snapshot only displays a single snapshot as of now, it's future may include a backend implementation to feed users live updates to game scores and statistics as live games are going on. Future implementations may also include a slider to revisit snapshots of quarters.</sub>
 
 ## Functionality and MVPs
 
