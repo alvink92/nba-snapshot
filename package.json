@@ -1,0 +1,31 @@
+{
+  "name": "nba-pastime",
+  "version": "1.0.0",
+  "description":
+    "This README would normally document whatever steps are necessary to get the application up and running.",
+  "main": "webpack.config.js",
+  "directories": {
+    "doc": "docs",
+    "test": "test"
+  },
+  "scripts": {
+    "postinstall": "webpack",
+    "start": "webpack --w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alvink92/nba-pastime.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alvink92/nba-pastime/issues"
+  },
+  "homepage": "https://github.com/alvink92/nba-pastime#readme",
+  "dependencies": {},
+  "engines": {
+    "node": "6.10.1",
+    "npm": "3.10.10"
+  }
+}
