@@ -1,8 +1,9 @@
 {
   "name": "nba-snapshot",
   "version": "1.0.0",
-  "description": "This README would normally document whatever steps are necessary to get the application up and running.",
-  "main": "webpack.config.js",
+  "description":
+    "This README would normally document whatever steps are necessary to get the application up and running.",
+  "main": "index.html",
   "directories": {
     "doc": "docs",
     "test": "test"

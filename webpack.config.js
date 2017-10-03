@@ -1,8 +1,8 @@
 var path = require("path");
-var webpack = require("webpack");
+// var webpack = require("webpack");
 
 module.exports = {
-  context: __dirname,
+  context: path.resolve(__dirname),
   entry: "./lib/main.js",
   output: {
     path: path.resolve(__dirname),
@@ -23,18 +23,18 @@ module.exports = {
   devtool: "source-maps",
   resolve: {
     extensions: [".js", "*"]
-  },
+  }
 
-  plugins: [
-    new webpack.DefinePlugin({
-      "process.env": {
-        NODE_ENV: JSON.stringify("production")
-      }
-    }),
-    new webpack.optimize.UglifyJsPlugin({
-      compress: {
-        warnings: true
-      }
-    })
-  ]
+  // plugins: [
+  //   new webpack.DefinePlugin({
+  //     "process.env": {
+  //       NODE_ENV: JSON.stringify("production")
+  //     }
+  //   }),
+  //   new webpack.optimize.UglifyJsPlugin({
+  //     compress: {
+  //       warnings: true
+  //     }
+  //   })
+  // ]
 };
