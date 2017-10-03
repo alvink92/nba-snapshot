@@ -1,17 +1,19 @@
 # NBA Snapshot
 
 ## Overview
-NBA Snapshot is an interactive visualization users can use to explore contributions certain players or category of players made to a game victory or loss.
+NBA Snapshot is a statistical dashboard that shows a snapshot of a state of an NBA match. Users can view team and player statistics as well as explore breakdowns of how well the game is going at the time.
+
+<sub>Although NBA Snapshot only displays a single snapshot as of now, it's future may include a backend implementation to feed users live updates to game scores and statistics as live games are going on. Future implementations may also include a slider to revisit snapshots of quarters.</sub>
 
 ## Functionality and MVPs
 
 NBA Snapshot will:
- * Utilize a sunburst made using d3.js
- * allow users to select a counting stat they would like to explore
- * display team stats visually pleasing and easy to understand manner
- * display a breakdown of counting stat per nested category
+ * allow users to view and/or interact with statistics of selected snapshot of an NBA game
+ * display teams' points scored in a visually pleasing manner
+ * display a breakdown of points scored per quarter
  * display boxscore of player statistics
- * make an api request for boxscore data using the format 'http://stats.nba.com/stats/boxscoretraditionalv2?RangeType=0&StartPeriod=1&StartRange=0&EndPeriod=10&EndRange=28800&GameID={gameId}'
+ * display an interactive statistical breakdown of selected statistics in the form of a zoomable sunburst
+ * display an interactive miscellaneous statistical goal monitor (e.g. free-throws missed for free tacos)
 
 ## Wireframes
 
@@ -19,7 +21,12 @@ This app with consist of two(currently) views, which can be navigated through th
 
 ### View 1
 
-![](https://raw.githubusercontent.com/alvink92/nba-pastime/master/docs/images/wireframes/sunburst.png)
+![](https://raw.githubusercontent.com/alvink92/nba-pastime/master/docs/images/wireframes/overview.png)
+
+
+### View 2
+
+![](https://raw.githubusercontent.com/alvink92/nba-pastime/master/docs/images/wireframes/stat_breakdown.png)
 
 
 ### Architecture and Technology
@@ -30,7 +37,7 @@ This project will be built using:
 
 The file structure of this project will be in the form:
 
- * index.html
+ * dashboard.html
  * /lib
  * /assets
    * /images
@@ -63,3 +70,7 @@ The file structure of this project will be in the form:
  * Finished up anything not completed
  * debug
  * Touch up on styling
+
+## Bonus Features
+ * Adding extra interactive visualizations in statistical breakdown tab
+ * Slider for users to navigate to certain states(by quarter) of the game
