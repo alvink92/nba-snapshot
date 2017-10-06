@@ -1,65 +1,20 @@
 # NBA Snapshot
 
 ## Overview
-NBA Snapshot is an interactive visualization users can use to explore contributions certain players or category of players made to a game victory or loss.
+[NBA Snapshot](https://alvink92.github.io/nba-snapshot/) is an interactive visualization users can use to explore and break down in-game player to team contributions for the selected game id.
 
-## Functionality and MVPs
+## Instructions
+The basic layout is broken into two sunbursts where team 1 is represented by the left-side sunburst and team 2 is represented by the right-side sunburst. Hovering over nodes of the sunburst will active the breadcrumbs on the top, showing raw and percentage contributions to the chosen statistic. Clicking a node will zoom in and focus in the sunburst to the node so users can more deeply analyze the breakdown of select node and it's children nodes.
 
-NBA Snapshot will:
- * Utilize a sunburst made using d3.js
- * allow users to select a counting stat they would like to explore
- * display team stats visually pleasing and easy to understand manner
- * display a breakdown of counting stat per nested category
- * display boxscore of player statistics
- * make an api request for boxscore data using the format 'http://stats.nba.com/stats/boxscoretraditionalv2?RangeType=0&StartPeriod=1&StartRange=0&EndPeriod=10&EndRange=28800&GameID={gameId}'
-
-## Wireframes
-
-This app with consist of two(currently) views, which can be navigated through the tabs on the top.
-
-### View 1
-
-![](https://raw.githubusercontent.com/alvink92/nba-pastime/master/docs/images/wireframes/sunburst.png)
+## Technologies
+  * D3.js
+  * jQuery
+  * HTML5
+  * CSS
 
 
-### Architecture and Technology
-
-This project will be built using:
- * Vanilla JavaScript and jQuery for DOM manipulation
- * d3.js for creating visualization component modules
-
-The file structure of this project will be in the form:
-
- * index.html
- * /lib
- * /assets
-   * /images
-   * /css
-
-## Implementation Timeline
-
-### Day 1
- * set up package.json
- * set up webpack.config.js
- * set up node_modules
- * write and test entry file and modules
- * learn the basics of d3.js
- * find in-game nba data
- * brainstorm ideas to make design and layout more user-friendly and pleasing to look at (if have time)
-
-### Day 2
- * create layout of dashboard
- * create and test tabs to display each view
- * Brainstorm how data will flow into each visualization component
- * write first graphical d3 component module and test that it works and displays in index file
-
-
-### Day 3
- * Create and style team score header
- * Create static table components for points per quarter and box score
- * Create Other graphical d3 component module
-
-### Day 4
- * Finished up anything not completed
- * debug
- * Touch up on styling
+## Todos
+  * Dynamically able to search for game by ID and make API request to update charts
+  * Possibly change sunburst's onHover to onClick and onClick to onDoubleClick to be able cache any depth of breadcrumb instead of just the deepest level
+  * Specify what category is selected and implement ability to specify what category for sunburst's to represent(right now it's just points)
+  * Add a meter to visually display which team won specified category
