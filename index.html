@@ -7,6 +7,17 @@
       body {
       }
 
+    #title-wrap {
+      display: flex;
+      margin-bottom: 20px;
+      font-size: 25px;
+      font-family: 'Oswald', sans-serif;
+    }
+    
+    #title-wrap > h1 {
+      margin: 0 auto;
+    }
+
       .charts {
         display: flex;
         justify-content: space-between;
@@ -85,6 +96,7 @@
       }
 
     </style>
+<link href="https://fonts.googleapis.com/css?family=Oswald:700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Geo" rel="stylesheet">
     <script src="https://d3js.org/d3.v4.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -92,6 +104,9 @@
   <body>
     <div id="container">
       <div id="sequence"></div>
+      <div id="title-wrap">
+        <h1>NBA Snapshot</h1>
+      </div>
       <div id="header-wrap">
         <div id="header-game-id">
           <div id="game-id-key"></div>
